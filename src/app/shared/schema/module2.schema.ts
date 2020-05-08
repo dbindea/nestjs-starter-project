@@ -7,6 +7,7 @@ export const Module2Schema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    versionKey: false,
   },
 )
 

@@ -14,7 +14,7 @@ export class Module2Controller {
     description: 'The search result.',
   })
   @Get(':id')
-  get(@Param('id') id: string) {
+  get(@Param('id') id: string): Promise<Module2Model> {
     return this.module2Service.find(id)
   }
 
@@ -24,7 +24,7 @@ export class Module2Controller {
     description: 'The operation result.',
   })
   @Post()
-  post(@Body() payload: Module2Model) {
+  post(@Body() payload: Module2Model): Promise<any> {
     return this.module2Service.update(payload)
   }
 }

@@ -7,10 +7,10 @@ export class Module2Service {
   constructor(private module2MongoService: Module2MongoService) {}
 
   find(id: string): Promise<Module2Model> {
-    throw new Error('Method not implemented.')
+    return this.module2MongoService.find(id)
   }
 
   update(payload: Module2Model): Promise<any> {
-    throw new Error('Method not implemented.')
+    return this.module2MongoService.create(payload)
   }
 }
