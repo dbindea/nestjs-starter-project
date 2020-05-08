@@ -18,7 +18,8 @@ switch (_env.toLowerCase()) {
     break
 }
 
-CONFIG.endpoint = `http://${CONFIG.host}:${CONFIG.port}/`
+CONFIG.apiVersion = 'v0'
+CONFIG.endpoint = `http://${CONFIG.host}:${CONFIG.port}/api/${CONFIG.apiVersion}`
 
 export const appConfig = () => {
   return {

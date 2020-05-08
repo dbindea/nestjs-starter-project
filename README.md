@@ -15,8 +15,11 @@
 ## Features
 - Modularized project
 - API Rest ready
-- Development, Pre-Production, Production environments
+- Development, Production environment ready
 - Passport, JWT security implemented
+- NestJS Middelware implemented
+- NestJS Interceptor implemented
+- NestJS Filter implemented
 - Mongodb connection ready
 - Express server configured
 - Swagger API Document
