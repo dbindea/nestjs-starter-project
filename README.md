@@ -9,12 +9,12 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[NestJS](https://github.com/nestjs/nest) framework TypeScript starter repository with the most important components.
 
 
 ## Features
 - Modularized project
-- [API] (http://127.0.0.1:3000/doc) Rest ready on http://127.0.0.1:3000/api/v0/
+- [API](http://127.0.0.1:3000/doc) Rest ready on http://127.0.0.1:3000/api/v0/
 - Development, Production environment ready
 - Passport, JWT security implemented
 - NestJS Middelware implemented
@@ -22,7 +22,7 @@
 - NestJS Filter implemented
 - Mongodb connection ready
 - Express server configured
-- [Swagger] (http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
+- [Swagger](http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
 
 ## Installation
 
