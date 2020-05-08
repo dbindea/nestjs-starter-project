@@ -14,7 +14,7 @@
 
 ## Features
 - Modularized project
-- API Rest ready
+- [API] (http://127.0.0.1:3000/doc) Rest ready on http://127.0.0.1:3000/api/v0/
 - Development, Production environment ready
 - Passport, JWT security implemented
 - NestJS Middelware implemented
@@ -22,7 +22,7 @@
 - NestJS Filter implemented
 - Mongodb connection ready
 - Express server configured
-- Swagger API Document
+- [Swagger] (http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
 
 ## Installation
 
