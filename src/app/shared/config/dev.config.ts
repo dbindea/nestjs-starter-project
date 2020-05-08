@@ -4,4 +4,10 @@ export const DEV_CONFIG: any = {
   isLog: true,
   isCors: false,
   corsWhiteList: [],
+  db: {
+    mongo: {
+      url: 'localhost',
+      database: 'nestjs-starter-project',
+    },
+  },
 }
