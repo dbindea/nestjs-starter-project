@@ -11,6 +11,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
+## Features
+- Modularized project
+- API Rest ready
+- Development, Pre-Production, Production environments
+- Passport, JWT security implemented
+- Mongodb connection ready
+- Express server configured
+- Swagger API Document
+
 ## Installation
 
 ```bash
@@ -27,6 +37,7 @@ $ npm run start
 $ npm run start:dev
 
 # production mode
+$ npm run build
 $ npm run start:prod
 ```
 
