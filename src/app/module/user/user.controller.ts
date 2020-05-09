@@ -1,5 +1,5 @@
 import { Controller, Post, Body, UseGuards, Get, Param, Query } from '@nestjs/common'
-import { ApiTags, ApiOperation } from '@nestjs/swagger'
+import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger'
 import { UserService } from '@shared/services/index.services'
 import { AuthUserService } from '@shared/auth/auth-user.service'
 import { User } from '@shared/model/user.model'
@@ -18,6 +18,7 @@ export class UserController {
   }
 
   @ApiOperation({ summary: 'Find user by id' })
+  @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
   @Get(':id')
   async findUser(@Param('id') id: string) {
@@ -25,6 +26,7 @@ export class UserController {
   }
 
   @ApiOperation({ summary: 'Find user by email' })
+  @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
   @Get()
   async findUserByEmail(@Query('email') email: string) {

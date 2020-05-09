@@ -7,6 +7,7 @@ import { Module1Controller } from 'app/module/module1/module1.controller'
 import { MongooseModule } from '@nestjs/mongoose'
 import { appConfig } from '@shared/config/app.config'
 import { UserModule } from 'app/module/user/user.module'
+import { ScheduleModule } from '@nestjs/schedule'
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { UserModule } from 'app/module/user/user.module'
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
+    ScheduleModule.forRoot(),
   ],
   controllers: [AppController],
 })

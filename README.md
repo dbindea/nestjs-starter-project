@@ -16,12 +16,14 @@
 - Modularized project
 - [API](http://127.0.0.1:3000/doc) Rest ready on http://127.0.0.1:3000/api/v0/
 - Development, Production environment ready
-- Passport, JWT security implemented
+- Passport, JWT Security implemented
+- User Login with Mongo database
 - NestJS Middelware implemented
 - NestJS Interceptor implemented
 - NestJS Filter implemented
 - Mongodb connection ready
-- Express server configured
+- Express server configured with elemental security implemented
+- Scheduler implemented
 - [Swagger](http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
 
 ## Requirements

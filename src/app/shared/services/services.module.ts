@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose'
 import { Module2Schema } from '@shared/schema/module2.schema'
 import { UserService } from './user/user.service'
 import { UserSchema } from '@shared/schema/user.schema'
+import { SchedulerService } from './scheduler/scheduler.service'
 
 const sharedServices: any[] = [Module2MongoService, UserService]
 
@@ -15,7 +16,7 @@ const sharedServices: any[] = [Module2MongoService, UserService]
       { name: 'User', schema: UserSchema },
     ]),
   ],
-  providers: [...sharedServices],
+  providers: [...sharedServices, SchedulerService],
   exports: [...sharedServices],
 })
 export class ServicesModule {}
