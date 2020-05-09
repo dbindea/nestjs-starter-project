@@ -24,6 +24,7 @@
 - Mongodb connection ready
 - Express server configured with elemental security implemented
 - Scheduler implemented
+- Compodoc documentation implemented (npx compodoc -p tsconfig.json -s) on http://127.0.0.1:8080
 - [Swagger](http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
 
 ## Requirements

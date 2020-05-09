@@ -8,6 +8,9 @@ export class SchedulerService {
     console.log('Start cron....')
   }
 
+  /**
+   * Cron event every hour
+   */
   @Cron(CronExpression.EVERY_HOUR)
   handleCron() {
     console.log('Cron every hour....')
