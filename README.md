@@ -24,6 +24,10 @@
 - Express server configured
 - [Swagger](http://127.0.0.1:3000/doc) API Document on http://127.0.0.1:3000/doc
 
+## Requirements
+- Mongodb instance on localhost, default port
+- For production set environment variable: "prod"
+
 ## Installation
 
 ```bash

@@ -29,11 +29,13 @@ export class UserService {
     }
   }
 
-  async findByEmail(email: string): Promise<any> {
+  async findByEmail(email: string, showPassword: boolean = false): Promise<any> {
     let userObj: User = new User()
     await this.userModel.findOne({ email: email }, (err, result) => {
       userObj = result
-      userObj.password = undefined
+      if (!showPassword) {
+        userObj.password = undefined
+      }
     })
     return userObj
   }
