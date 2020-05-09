@@ -6,11 +6,13 @@ import { Module1Middleware } from '@shared/middelware/module1.middleware'
 import { Module1Controller } from 'app/module/module1/module1.controller'
 import { MongooseModule } from '@nestjs/mongoose'
 import { appConfig } from '@shared/config/app.config'
+import { UserModule } from 'app/module/user/user.module'
 
 @Module({
   imports: [
     Module1Module,
     Module2Module,
+    UserModule,
     MongooseModule.forRoot(`mongodb://${appConfig().db.mongo.url}/${appConfig().db.mongo.database}`, {
       useCreateIndex: true,
       useFindAndModify: false,

@@ -1,5 +1,4 @@
 import * as mongoose from 'mongoose'
-import { Document } from 'mongoose'
 
 export const Module2Schema = new mongoose.Schema(
   {
@@ -11,6 +10,6 @@ export const Module2Schema = new mongoose.Schema(
   },
 )
 
-export interface IModule2 extends Document {
+export interface IModule2 extends mongoose.Document {
   readonly description?: string
 }

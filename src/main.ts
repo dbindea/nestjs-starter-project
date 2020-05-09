@@ -10,6 +10,7 @@ import { Module1Module } from 'app/module/module1/module1.module'
 import { Module2Module } from 'app/module/module2/module2.module'
 import { HttpException, HttpStatus } from '@nestjs/common'
 import { HttpExceptionFilter } from '@shared/filter/http-exception.filter'
+import { UserModule } from 'app/module/user/user.module'
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule)
@@ -40,7 +41,7 @@ async function bootstrap() {
       .setVersion(appConfig().apiVersion)
       .build()
     const document = SwaggerModule.createDocument(app, documentBuilder, {
-      include: [Module1Module, Module2Module],
+      include: [Module1Module, Module2Module, UserModule],
     })
     SwaggerModule.setup('doc', app, document)
   }
